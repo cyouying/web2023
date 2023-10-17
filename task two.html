@@ -15,124 +15,160 @@
     <script src="bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
-    <div class="container" id="header">
-        <div id="logo">
-            <h1>FTDBLUEMOOD</h1>
-            <h3>SMALL COMPANY SLOGAN GOES HERE</h3>
-        </div>
-        <div id="figure">
-            <img class="img-fluid" src="/task two_images/header.jpg" alt="header1">
-            <img class="img-fluid" src="/task two_images/header2.jpg" alt="header2">
-            <img class="img-fluid" src="/task two_images/header3.jpg" alt="header3">
-            <img class="img-fluid" src="/task two_images/header4.jpg" alt="header4">
+<body div class="container bg-primary">
 
-        </div>
-        <div id="manu">
-            <ul style="list-style:none">
-                <li><a href="">Home</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </div>
+    <div class="container text-white" id="logo">
+        <h1 class="fs-3"><b>FTDBLUEMOOD</b></h1>
+        <h3 class="fs-5"><b>SMALL COMPANY SLOGAN GOES HERE</b></h3>
     </div>
 
-    <article class="container" id="main">
-        <div id="">
-            <h3>Your Options</h3>
-            <img class="img-fluid" src="/task two_images/light bulb.jpg" alt="light bulb">
-            <p>Cras hendrerit est nec libero<br>
-                ornare sagittis.<br>
-                Donec interdum dignissim risus et vestibulum.</p>
-            <h3>Company News</h3>
-            <img class="img-fluid" src="/task two_images/clock.jpg" alt="clock">
-            <p>Donec interdum dignissim risus<br>et vestibulum.<br>
-                Donec eget nisi id magna<br>
-                tempor laoreet. Etiam egesa</p>
-            <h3>Have a Question?</h3>
-            <img class="img-fluid" src="/task two_images/question mark.jpg" alt="question mark">
-            <p>Cras hendrerit est nec libero<br>
-                ornare sagittis.<br>
-                Donec interdum dignissim<br>risus et vestibulum.</p>
+    <div class="container bg-info" id="header">
+
+        <div class="container" id="figure">
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                </div>
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active" id="main_title">
+                        <img src="/task two_images/header.jpg" alt="header1" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/task two_images/header2.jpg" alt="header2" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/task two_images/header3.jpg" alt="header3" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/task two_images/header4.jpg" alt="header4" class="d-block w-100">
+                    </div>
+                </div>
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+            </div>
+            <div class="btn-group" id="manu">
+                <button type="button" class="btn btn-primary text-white ">Home</button>
+                <button type="button" class="btn btn-primary text-white ">Blog</button>
+                <button type="button" class="btn btn-primary text-white ">Gallery</button>
+                <button type="button" class="btn btn-primary text-white ">About</button>
+                <button type="button" class="btn btn-primary text-white ">Contact</button>
+            </div>
         </div>
 
-        <div id="box">
-            <div id="left content">
-                <h3>Etiam felis ipsum</h3>
-                <ul id="port">
-                    <li><img class="img-fluid" src="/task two_images/character1.jpg" alt="character1"></li>
-                    <p>Vivamus ut risus sit<br>amet ante tempor<br>dapibus eget at<br>quam. In blandit ante<br>at massa
-                        faucibus.</p>
-                    <li><img class="img-fluid" src="/task two_images/character2.jpg" alt="character2"></li>
-                    <p>In in dui eget nibh<br>viverra mollis eget<br>eget lacus. In non<br>velit augue. Quisque<br>dolor
-                        elit.</p>
-                    <li><img class="img-fluid" src="/task two_images/character3.jpg" alt="character3"></li>
-                    <p>Koreet aliquam leo<br>tellus. dolor<br>dapibumeQuisque<br>nulla. Vestibulum<br>libero nisl, porta
-                        vel.</p>
-                    <li><img class="img-fluid" src="/task two_images/character4.jpg" alt="character4"></li>
-                    <p>Nullam vehicula<br>odio in tellus<br>venenatis a facilisis<br>metus mollis. Fusce<br>tempus
-                        dolor.</p>
-                </ul>
-            </div>
-            <div id="right content">
-                <h3>Duis blandit ultrices</h3>
-                <ul>
-                    <li>> DONEC TINCIDUNT PURUS VITAE</li>
-                    <li>> DONEC NON EGESTAS LECTUS LACUS</li>
-                    <li>> CRAS PORTTITOR HENDRERIT EUISMOD</li>
-                    <li>> CUM SOCIIS NATOQUE PENATIBUS</li>
-                    <li>> QUISQUE MAURIS LIGULA, COMMODO</li>
-                    <li>> CURABITUR DIGNISSIM COMMODO</li>
-                    <li>> DONEC NON EGESTAS LECTUS LACUS</li>
-                    <li>> CRAS PORTTITOR HENDRERIT EUISMOD</li>
-                    <li>> CUM SOCIIS NATOQUE PENATIBUS</li>
-                    <li>> QUISQUE MAURIS LIGULA, COMMODO</li>
-                    <li>> CURABITUR DIGNISSIM COMMODO</li>
-                </ul>
-                <h5>READ MORE</h5>
+        <article class="container" id="main">
+            <div id="">
+                <h3>Your Options</h3>
+                <img class="img-fluid" src="/task two_images/light bulb.jpg" alt="light bulb">
+                <p>Cras hendrerit est nec libero<br>
+                    ornare sagittis.<br>
+                    Donec interdum dignissim risus et vestibulum.</p>
+                <h3>Company News</h3>
+                <img class="img-fluid" src="/task two_images/clock.jpg" alt="clock">
+                <p>Donec interdum dignissim risus<br>et vestibulum.<br>
+                    Donec eget nisi id magna<br>
+                    tempor laoreet. Etiam egesa</p>
+                <h3>Have a Question?</h3>
+                <img class="img-fluid" src="/task two_images/question mark.jpg" alt="question mark">
+                <p>Cras hendrerit est nec libero<br>
+                    ornare sagittis.<br>
+                    Donec interdum dignissim<br>risus et vestibulum.</p>
             </div>
 
-        </div>
+            <div id="box">
+                <div id="left content">
+                    <h3>Etiam felis ipsum</h3>
+                    <ul id="port">
+                        <li><img class="img-fluid" src="/task two_images/character1.jpg" alt="character1"></li>
+                        <p>Vivamus ut risus sit<br>amet ante tempor<br>dapibus eget at<br>quam. In blandit ante<br>at
+                            massa
+                            faucibus.</p>
+                        <li><img class="img-fluid" src="/task two_images/character2.jpg" alt="character2"></li>
+                        <p>In in dui eget nibh<br>viverra mollis eget<br>eget lacus. In non<br>velit augue.
+                            Quisque<br>dolor
+                            elit.</p>
+                        <li><img class="img-fluid" src="/task two_images/character3.jpg" alt="character3"></li>
+                        <p>Koreet aliquam leo<br>tellus. dolor<br>dapibumeQuisque<br>nulla. Vestibulum<br>libero nisl,
+                            porta
+                            vel.</p>
+                        <li><img class="img-fluid" src="/task two_images/character4.jpg" alt="character4"></li>
+                        <p>Nullam vehicula<br>odio in tellus<br>venenatis a facilisis<br>metus mollis. Fusce<br>tempus
+                            dolor.</p>
+                    </ul>
+                </div>
+                <div id="right content">
+                    <h3>Duis blandit ultrices</h3>
+                    <ul>
+                        <li>> DONEC TINCIDUNT PURUS VITAE</li>
+                        <li>> DONEC NON EGESTAS LECTUS LACUS</li>
+                        <li>> CRAS PORTTITOR HENDRERIT EUISMOD</li>
+                        <li>> CUM SOCIIS NATOQUE PENATIBUS</li>
+                        <li>> QUISQUE MAURIS LIGULA, COMMODO</li>
+                        <li>> CURABITUR DIGNISSIM COMMODO</li>
+                        <li>> DONEC NON EGESTAS LECTUS LACUS</li>
+                        <li>> CRAS PORTTITOR HENDRERIT EUISMOD</li>
+                        <li>> CUM SOCIIS NATOQUE PENATIBUS</li>
+                        <li>> QUISQUE MAURIS LIGULA, COMMODO</li>
+                        <li>> CURABITUR DIGNISSIM COMMODO</li>
+                    </ul>
+                    <h5>READ MORE</h5>
+                </div>
 
-        <div id="article">
-            <div id="left article">
-                <h3>Nullam consectetur</h3>
-                <p><b>Phasellus porta. Fusce suscipit varius mi.etus. Nulla facilisi. Aenean nec eros. Vestibulum
-                        ante<br>
-                        ipsum primis in faucibu.</b><br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.Donec et quam magna. Morbi sed elit erat.
-                    Proin<br>
-                    sodales interdum erat, at mollis ante tempor sed. Donec venenatis dui ac turpis interdum a ornare
-                    risus<br>
-                    scelerisque. Quisque condimentum, enim non posuere blandit, metus mi dictum risus, nec rutrum ligula
-                    eros<br>
-                    id eros. In eget ante diam.<br>
-                    Suspendisse sit amet nunc non augue posuere adipiscing. Vivamus ut risus sit amet ante tempor
-                    dapibus<br>
-                    eget at quam. In blandit ante at massa faucibus malesuada. Vivamus eros augue, volutpat in tincidunt
-                    nec,<br>
-                    mattis ullamcorper tortor. Nunc semper nisl vitae ante.</p>
-                <h5>READ MORE</h5>
             </div>
-            <div id="right article">
-                <h3>In semper massa</h3>
-                <img class="img-fluid" src="/task two_images/semper massa.jpg" alt="semper massa">
-                <p>Praesent vestibulum molestie lacus. Aenean Cum<br>sociis natoque penatibus et magnis dis
-                    parturient<br>montes, nascetur ridiculus mus. Nulla dui. Fusce<br>feugiat malesuada odio.</p>
-                <h5>READ MORE</h5>
+
+            <div id="article">
+                <div id="left article">
+                    <h3>Nullam consectetur</h3>
+                    <p><b>Phasellus porta. Fusce suscipit varius mi.etus. Nulla facilisi. Aenean nec eros. Vestibulum
+                            ante<br>
+                            ipsum primis in faucibu.</b><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Donec et quam magna. Morbi sed elit
+                        erat.
+                        Proin<br>
+                        sodales interdum erat, at mollis ante tempor sed. Donec venenatis dui ac turpis interdum a
+                        ornare
+                        risus<br>
+                        scelerisque. Quisque condimentum, enim non posuere blandit, metus mi dictum risus, nec rutrum
+                        ligula
+                        eros<br>
+                        id eros. In eget ante diam.<br>
+                        Suspendisse sit amet nunc non augue posuere adipiscing. Vivamus ut risus sit amet ante tempor
+                        dapibus<br>
+                        eget at quam. In blandit ante at massa faucibus malesuada. Vivamus eros augue, volutpat in
+                        tincidunt
+                        nec,<br>
+                        mattis ullamcorper tortor. Nunc semper nisl vitae ante.</p>
+                    <h5>READ MORE</h5>
+                </div>
+                <div id="right article">
+                    <h3>In semper massa</h3>
+                    <img class="img-fluid" src="/task two_images/semper massa.jpg" alt="semper massa">
+                    <p>Praesent vestibulum molestie lacus. Aenean Cum<br>sociis natoque penatibus et magnis dis
+                        parturient<br>montes, nascetur ridiculus mus. Nulla dui. Fusce<br>feugiat malesuada odio.</p>
+                    <h5>READ MORE</h5>
+                </div>
+
             </div>
 
-        </div>
 
+        </article>
 
-    </article>
-
-    <footer class="container" id="footer">
-        <p>Copyright 2011. Designed by Free Web Templates, coded Free Flash Templates<br>Privacy Policy | Terms of Use |
-            XHTML | CSS</p>
-    </footer>
+        <footer class="container" id="footer">
+            <p>Copyright 2011. Designed by Free Web Templates, coded Free Flash Templates<br>Privacy Policy | Terms of
+                Use |
+                XHTML | CSS</p>
+        </footer>
 </body>
 
 </html>
