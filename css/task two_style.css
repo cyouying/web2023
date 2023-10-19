@@ -10,6 +10,18 @@ li {
     background:#a5e1fd
 }
 
+#left {
+    width: 800px;
+    height: 388px;
+    overflow: visible;
+}
+
+#right {
+    width: 400px;
+    height: 388px;
+    overflow: visible;
+}
+
 #footer {
     background-image:linear-gradient(#156077 ,#8cd9f7 ,#6ed0ee ,  #2e9ec0, #104d62);
 }
