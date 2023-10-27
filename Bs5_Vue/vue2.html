@@ -13,7 +13,7 @@
     <div id="app">
         <h1>{{ message }}</h1>
     </div>
-
+<button onclick=""myfunction()>Click me!</button>
 </body>
 
 <script>
@@ -21,6 +21,10 @@
         el: '#app',
         data: { message: 'Hello Vue!' }
     })
+
+    function myfunction(){
+        myObject.message= "Hello Kitty!"+ math.floor(math.random()*10)
+    }
 </script>
 
 
