@@ -3,7 +3,7 @@
 Theme Name:     Payra
 Version:        1.0.0
 Author:         themepresss
-¸ü¶à¾«Æ·Ä£°åÇë·ÃÎÊ£ºhttp://www.bootstrapmb.com
+ï¿½ï¿½ï¿½à¾«Æ·Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê£ï¿½http://www.bootstrapmb.com
 =========================================================*/
 /*=======================================================
 TABLE OF CONTENTS:
@@ -186,7 +186,6 @@ button:focus {
     position: relative;
     text-transform: uppercase;
     margin: 0.31em 0 0;
-    color: ;
     color: #fff;
     margin-bottom: 50px;
     margin-top: 0;
@@ -205,7 +204,7 @@ button:focus {
   line-height: 47px;
   font-size: 16px;
   font-size: 1.06667rem;
-  color: #fff;
+  color: #da627d;
   border: 1px solid rgba(102,102,102,.8);
   padding: 0 30px;
   text-transform: uppercase;
@@ -219,7 +218,7 @@ button:focus {
   transition: all 0.3s;
 }
 .theme-btn:hover{
-  background: #ddd;
+  background: #da627d;
   color:#333;
 }
 /*** back to top **/
@@ -258,7 +257,7 @@ button:focus {
 .back-to-top i {
   font-size: 18px;
   font-size: 1.125rem;
-  color: #fff;
+  color: #da627d;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -326,9 +325,9 @@ button:focus {
     font-size: 1.06667rem;
   }
   .site-header #navbar > ul .sub-menu {
-    background-color: #fff;
+    background-color: #da627d;
     width: 250px;
-    border-top: 2px solid #ddd;
+    border-top: 2px solid #da627d;
     position: absolute;
     left: 0;
     top: 130%;
@@ -429,9 +428,9 @@ button:focus {
   }
   .site-header #navbar .mega-menu,
   .site-header #navbar .half-mega-menu {
-    background-color: #fff;
+    background-color: #da627d;
     padding: 20px;
-    border-top: 2px solid #ddd;
+    border-top: 2px solid #da627d;
     position: absolute;
     right: 0;
     top: 120%;
@@ -1151,7 +1150,7 @@ button:focus {
 
 .hero .social-links:after {
   font-family: "Oswald", sans-serif;
-  color: #888;
+  color: #da627d;
   content: "SOCIAL";
   position: absolute;
   left: -28px;
@@ -1253,7 +1252,7 @@ button:focus {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 8px;
-  color: #fff;
+  color: #da627d;
   margin: 0;
   position: relative;
 }
@@ -1411,7 +1410,7 @@ page loader
   display: inline-block;
   position: absolute;
   top: 0;
-  background-color: #ddd;
+  background-color: #da627d;
   border-radius: 100%;
   -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
   animation: sk-bounce 2.0s infinite ease-in-out;
@@ -1490,7 +1489,7 @@ page loader
     top: 27px;
     width: 380px;
     height: 380px;
-    border: 10px solid #ddd;
+    border: 10px solid #ffa5ab;
     transform: rotate(136deg);
     transition: all .5s;
 }
@@ -1502,7 +1501,7 @@ page loader
     top: 21px;
     width: 380px;
     height: 380px;
-    border: 10px solid #555;
+    border: 10px solid #da627d;
     transform: rotate(-91deg);
     transition: all .5s;
     -webkit-transition: all .5s;
@@ -1522,7 +1521,7 @@ page loader
 
 .about-content h2 {
     position: relative;
-    color: #fff;
+    color: #da627d;
     padding-bottom: 15px;
     font-size: 30px;
     display: inline-block;
@@ -1532,10 +1531,10 @@ page loader
     content: "";
     position: absolute;
     left: 0;
-    top: 60%;
+    top: 75%;
     width: 180px;
     height: 5px;
-    background: #666;
+    background: #ffa5ab;
     bottom: 0;
     transform: translateY(-50%);
     margin-top: 5px;
@@ -1568,7 +1567,7 @@ page loader
     width: 100px;
     height: 100px;
     line-height: 100px;
-    border: 1px solid #666;
+    border: 1px solid #ffa5ab;
     font-size: 50px;
     background: transparent;
     -webkit-box-sizing: content-box;
@@ -1696,7 +1695,7 @@ page loader
 .dots {
     width: 15px;
     height: 15px;
-    background: #666;
+    background: #da627d;
     border-radius: 50%;
     left: 15px;
     top: 0;

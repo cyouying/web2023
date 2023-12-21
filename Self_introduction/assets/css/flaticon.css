@@ -27,8 +27,8 @@
     font-style: normal;
 }
 
+
 .flaticon-laptop:before { content: "\f100"; }
-.flaticon-web-programming:before { content: "\f101"; }
 .flaticon-color:before { content: "\f102"; }
 .flaticon-smartphone:before { content: "\f103"; }
 .flaticon-settings-gears:before { content: "\f104"; }
@@ -40,3 +40,5 @@
 .flaticon-right-quote:before { content: "\f10a"; }
 .flaticon-quotation-mark:before { content: "\f10b"; }
 .flaticon-play-button:before { content: "\f10c"; }
+.flaticon-video-camera:before { content: "\f237"; }
+.flaticon-video-recorder:before { content: "\f238"; }
