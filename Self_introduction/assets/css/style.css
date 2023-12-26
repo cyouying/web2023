@@ -1485,7 +1485,7 @@ page loader
     top: 3%;
     width: 90%;
     height: 90%;
-    background: rgba(255,255,255,.5);
+    background: rgba(255,165,171,.5);
     transition: all .3s;
     z-index: 9;
     visibility: hidden;
