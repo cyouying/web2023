@@ -1420,7 +1420,7 @@ page loader
     text-transform: capitalize;
 }
 .gallery-section .gallery-filters ul .current {
-    color: #fff;
+    color: #da627d;
     text-decoration: none;
 }
 
