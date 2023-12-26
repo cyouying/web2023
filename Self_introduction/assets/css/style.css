@@ -1545,9 +1545,9 @@ page loader
 }
 .testimonial-img img{
   border-radius: 50%;
-    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(255,165,171,0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(255,165,171,0.3);
+    box-shadow: 0px 5px 5px 0px rgba(255,165,171,0.3);
 }
 .testimonial-item {
     text-align: center;
@@ -1594,7 +1594,7 @@ page loader
     display: inline-block;
 }
 .testimonial-active .owl-dot.active {
-    background:#999999;
+    background:#da627d;
     position: relative;
 }
 .testimonial-active .owl-dot.active:before {
@@ -1604,7 +1604,7 @@ page loader
     width: 180%;
     height: 180%;
     content: "";
-    border: 1px solid #999999;
+    border: 1px solid #da627d;
     border-radius: 50%;
     text-align: center;
 }
@@ -1613,168 +1613,6 @@ page loader
 }
 .owl-theme .owl-dots .owl-dot span{
   display: none;
-}
-/*--------------------------------------------------------------
-0.9  pricing-section
---------------------------------------------------------------*/
-.pricing-section {
-  padding-bottom: 70px;
-  border-top: 1px solid rgba(102,102,102,.3);
-}
-
-@media (max-width: 991px) {
-  .pricing-section {
-    padding-bottom: 60px;
-  }
-}
-
-@media (max-width: 767px) {
-  .pricing-section {
-    padding-bottom: 50px;
-  }
-}
-
-.pricing-section .pricing-grids {
-  margin: 0 -15px;
-}
-
-.pricing-section .pricing-grids .grid {
-  width: 33.33%;
-  float: left;
-  padding: 0 15px 30px;
-  text-align: center;
-}
-
-@media (max-width: 991px) {
-  .pricing-section .pricing-grids .grid {
-    width: 50%;
-  }
-}
-
-@media (max-width: 767px) {
-  .pricing-section .pricing-grids .grid {
-    width: 100%;
-    float: none;
-  }
-}
-
-.pricing-section .pricing-header {
-    background-color: #000;
-    padding: 55px 25px 40px;
-}
-
-@media (max-width: 991px) {
-  .pricing-section .pricing-header {
-    padding: 45px 15px 30px;
-  }
-}
-
-.pricing-section .pricing-header .circuler-price {
-  background-color: #fff;
-  width: 130px;
-  height: 130px;
-  display: table;
-  border-radius: 50%;
-  margin: 0 auto 20px;
-  border: 5px solid rgba(102, 102, 102, 0.8);
-}
-
-@media (max-width: 991px) {
-  .pricing-section .pricing-header .circuler-price {
-    width: 110px;
-    height: 110px;
-  }
-}
-
-.pricing-section .pricing-header i{
-  font-size: 40px;
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin: 0;
-  display: table-cell;
-  vertical-align: middle;
-}
-
-@media (max-width: 991px) {
-  .pricing-section .pricing-header h2 {
-    font-size: 30px;
-    font-size: 1.875rem;
-  }
-}
-
-.pricing-section .pricing-header h2 sup {
-  font-size: 20px;
-  font-size: 1.25rem;
-}
-
-.pricing-section .pricing-body h2 span {
-  font-size: 20px;
-  font-size: 1.25rem;
-}
-
-@media (max-width: 991px) {
-  .pricing-section .pricing-header h2 sup {
-    font-size: 15px;
-    font-size: 0.9375rem;
-  }
-}
-
-.pricing-section .pricing-header p {
-    font-weight: normal;
-    color: #fff;
-    margin: 0;
-    font-size: 30px;
-}
-
-.pricing-section .pricing-body {
-    background-color: #333;
-    padding: 5px 50px 30px;
-}
-@media (max-width: 1199px) {
-  .pricing-section .pricing-body {
-    padding: 40px 20px 50px;
-  }
-}
-
-.pricing-section .pricing-body h3 {
-  font-size: 28px;
-  font-size: 1.75rem;
-  margin: 0 0 1em;
-  color:#fff;
-}
-.pricing-section .pricing-body h2 {
-  color:#ddd;
-}
-
-@media (max-width: 1199px) {
-  .pricing-section .pricing-body h3 {
-    font-size: 25px;
-    font-size: 1.5625rem;
-  }
-}
-
-.pricing-section .pricing-body p {
-  line-height: 2em;
-  margin-bottom: 2em;
-  color: #999;
-}
-.pricing-body .theme-btn{
-  color:#fff;
-  margin-top: 15px;
-  border:1px solid rgba(102,102,102,.8);
-}
-.pricing-body .theme-btn:hover{
-  color: #333;
-}
-.pricing-body ul{
-  list-style: none;
-
-}
-.pricing-body ul li{
-  padding: 10px 0;
-  list-style: none;
-  color:#999;
-
 }
 /*--------------------------------------------------------------
  1.0  blog-section
@@ -2115,7 +1953,7 @@ border: 1px solid #666;
 .theme-btn-s3 {
     font-size: 15px;
     font-weight: 500;
-    color: #fff;
+    color: #da627d;
     padding: 9px 25px;
     border: 1px solid #666;
     text-transform: capitalize;
@@ -2124,6 +1962,11 @@ border: 1px solid #666;
     background: transparent;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.theme-btn-s3:hover{
+  background: #da627d;
+  color:#333;
 }
 
 .contact-form ::-webkit-input-placeholder {
