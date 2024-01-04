@@ -35,7 +35,7 @@ server.post("/contact",   function(req, res){
      form.parse(req, function (err,fields,files){
         console.log(fields);
         console.log(files);
-        fs.renameSync(files.imgSrc.filepath, "Bs5_Vue/upload/"+files.imgSrc.originalFilename);
+        fs.renameSync(files.imgSrc.filepath, "Self_introduction/upload/"+files.imgSrc.originalFilename);
         var newData = fields;
         newData.imgSrc = "upload/"+files.imgSrc.originalFilename;
         PortfolioDB.insert(newData);
