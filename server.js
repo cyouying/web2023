@@ -6,7 +6,7 @@ var fs = require("fs");
 
 server.use(express.static("Self_introduction"));//web root
 //server.use(express.static("md110"));//web root
-server.use(bodyParser.urlencoded());
+server.use(bodyParser.urlencoded({extended:true}));
 server.use(bodyParser.json());
 
 var DB = require("nedb-promises");
