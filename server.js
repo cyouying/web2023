@@ -6,8 +6,14 @@ var fs = require("fs");
 
 server.use(express.static("Self_introduction"));//web root
 //server.use(express.static("md110"));//web root
-server.use(bodyParser.urlencoded());
+server.use(bodyParser.urlencoded({extended:true}));
 server.use(bodyParser.json());
+
+// const fileUpload = require("express-fileupload");
+// server.use(fileUpload())
+const formidable  = require('formidable')
+ 
+
 
 var DB = require("nedb-promises");
 var ContactDB = DB.create("contact.db");
@@ -27,10 +33,40 @@ server.set("view engine", "ejs");
 server.set("views", __dirname+"/views");
 
 
-server.get("/contact", function(req, res){
+server.post("/contact",   function(req, res){
     //res.send("");
-    res.redirect("https:/md.nutc.edu.tw");
-}); 
+    //var form = formidable({maxFileSize: 200*1024});
+     const form = new formidable.IncomingForm();
+    // form.maxFileSize = 200*1024;
+     form.parse(req, function (err,fields,files){
+        console.log(fields);
+        console.log(files);
+        fs.renameSync(files.imgSrc.filepath, "Bs5_Vue/upload/"+files.imgSrc.originalFilename);
+        var newData = fields;
+        newData.imgSrc = "upload/"+files.imgSrc.originalFilename;
+        PortfolioDB.insert(newData);
+        res.redirect("/");
+     });
+    
+});
+
+server.get("/contact",   function(req, res){
+    //var form = formidable({maxFileSize: 200*1024});
+    const form = new formidable.IncomingForm();
+    // form.maxFileSize = 200*1024;
+     form.parse(req, function (err,fields,files){
+        console.log(fields);
+        console.log(files);
+        
+        res.send("OK");
+     });
+ 
+})
+   
+
+    //email to manager
+    //res.send();
+  
 
 server.get("/service", function(req, res){
 
@@ -43,7 +79,8 @@ server.get("/service", function(req, res){
 })
 
 server.get("/portfolio", function(req, res){
-    
+    //res.send("U Got it!");
+ 
     PortfolioDB.find({}).then(results => {
         if(results !=null){
             res.send(results);
@@ -51,17 +88,12 @@ server.get("/portfolio", function(req, res){
             res.send("Error!")
         }
     }) 
-    
+    //   res.send(portfolio);
 })
 
 
  
-server.post("/contact", function(req, res){
-    console.log(req.body);
-    ContactDB.insert(req.body);
-    res.send();
-    //res.redirect("/index.html");
-})
+
 
 
 server.listen(5500, function(){
