@@ -9,18 +9,24 @@
 </head>
 <body>
     <div id="app">
-       <h1>{{ message }}</h1>
+       <ul>
+            <li v-for="item in todos"> {{item.text}} {{item.due}}</li>
+       </ul>
     </div>
     <button onclick="myfunction()">Click me!</button>
 </body>
 <script>
     var myObject=new Vue({
         el: "#app",
-        data: {message: "Hello vue!"}
+        data: {todos:[
+            {text: 'Learn JS', due:"2023-10-27"},
+            {text: 'Learn Vue', due:"2023-11-15"},
+            {text: 'Build WebSite', due:"2023-12-10"}
+        ] }
     })
      
     function myfunction(){
-        myObject.message = "Hello Kitty!"+ Math.floor(Math.random()*10)
+        myObject.todos.push( {text: 'New Year', due:"2024-1-1"})
     }
 
 </script>
